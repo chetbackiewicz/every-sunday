@@ -1,0 +1,12 @@
+-- Rollback initial schema migration
+BEGIN;
+
+DROP TABLE IF EXISTS cell_references CASCADE;
+DROP TABLE IF EXISTS transactions CASCADE;
+DROP TABLE IF EXISTS csv_files CASCADE;
+DROP TABLE IF EXISTS category_paths CASCADE;
+DROP TABLE IF EXISTS categories CASCADE;
+DROP TABLE IF EXISTS monthly_budgets CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+
+COMMIT;
