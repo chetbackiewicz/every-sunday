@@ -1,0 +1,31 @@
+Transaction Date,Post Date,Description,Category,Type,Amount,Memo
+11/15/2025,11/16/2025,"Amazon Prime Subscription",Shopping,Sale,-14.99,Monthly subscription
+11/14/2025,11/15/2025,"Coffee Shop Downtown",Food & Drink,Sale,-5.75,Morning coffee
+11/14/2025,11/14/2025,"Credit Card Payment",,Payment,450.00,Monthly payment
+11/12/2025,11/14/2025,"Shell Gas Station",Transportation,Sale,-35.50,Fill up tank
+11/11/2025,11/12/2025,"City Parking Meter",Transportation,Sale,-8.00,Downtown parking
+11/11/2025,11/12/2025,"Movie Theater Tickets",Entertainment,Sale,-24.00,Weekend movie
+11/09/2025,11/10/2025,"Grocery Store Weekly Shopping",Groceries,Sale,-127.43,Weekly groceries
+11/08/2025,11/09/2025,"Office Supply Store",Office Supplies,Sale,-32.17,Home office items
+11/08/2025,11/09/2025,"Pizza Delivery",Food & Drink,Sale,-18.99,Friday dinner
+11/07/2025,11/08/2025,"Gas Station Convenience Store",Transportation,Sale,-28.75,Gas and snacks
+11/07/2025,11/08/2025,"Pharmacy Prescription",Health & Medical,Sale,-15.00,Monthly prescription
+11/06/2025,11/07/2025,"Sporting Goods Store",Recreation,Sale,-89.99,Running shoes
+11/05/2025,11/06/2025,"Insurance Premium",Insurance,Sale,-125.00,Auto insurance
+11/04/2025,11/05/2025,"Cloud Storage Service",Technology,Sale,-9.99,Monthly cloud backup
+11/03/2025,11/04/2025,"Bookstore Purchase",Education,Sale,-27.50,Programming books
+11/02/2025,11/03/2025,"Gym Membership",Health & Fitness,Sale,-49.99,Monthly gym fee
+11/01/2025,11/01/2025,"Previous Balance Payment",,Payment,1250.00,Balance transfer
+10/31/2025,10/31/2025,"Streaming Service",Entertainment,Sale,-15.99,Monthly Netflix
+10/30/2025,10/31/2025,"Farmers Market",Groceries,Sale,-45.25,Fresh produce
+10/29/2025,10/30/2025,"Restaurant Dinner",Food & Drink,Sale,-87.50,Anniversary dinner
+10/28/2025,10/29/2025,"Department Store",Shopping,Sale,-156.78,Winter clothing
+10/28/2025,10/29/2025,"Hardware Store",Home Improvement,Sale,-43.21,Home repairs
+10/27/2025,10/28/2025,"Airport Parking",Travel,Sale,-45.00,Business trip parking
+10/26/2025,10/27/2025,"Hotel Restaurant",Travel,Sale,-72.30,Business dinner
+10/25/2025,10/26/2025,"Airline Tickets",Travel,Sale,-289.00,Flight to conference
+10/24/2025,10/25/2025,"Electronics Return",Shopping,Return,125.99,Returned headphones
+10/23/2025,10/24/2025,"Local Bakery",Food & Drink,Sale,-12.50,Weekend treats
+10/22/2025,10/23/2025,"University Bookstore",Education,Sale,-178.95,Course materials
+10/21/2025,10/22/2025,"Pet Supply Store",Pet Care,Sale,-67.43,Dog food and toys
+10/20/2025,10/21/2025,"Music Streaming Service",Entertainment,Sale,-11.99,Spotify Premium
