@@ -1,0 +1,6 @@
+[
+  "cp $ROOT_WORKTREE_PATH/.env .env || true",
+  "cd frontend && npm install",
+  "cd backend && go mod download"
+]
+
