@@ -14,6 +14,7 @@ type Repositories struct {
 	Category      CategoryRepository
 	Transaction   TransactionRepository
 	CellReference CellReferenceRepository
+	File          FileRepository
 }
 
 // NewRepositories creates new repository instances
@@ -24,6 +25,7 @@ func NewRepositories(db *sqlx.DB) *Repositories {
 		Category:      NewCategoryRepository(db),
 		Transaction:   NewTransactionRepository(db),
 		CellReference: NewCellReferenceRepository(db),
+		File:          NewFileRepository(db),
 	}
 }
 
@@ -57,6 +59,7 @@ type CategoryRepository interface {
 // TransactionRepository defines transaction data access methods
 type TransactionRepository interface {
 	Create(ctx context.Context, tx *models.Transaction) (*models.Transaction, error)
+	CreateBatch(ctx context.Context, txs []*models.Transaction) error
 	GetByID(ctx context.Context, id int) (*models.Transaction, error)
 	GetByCSVFile(ctx context.Context, csvFileID int) ([]*models.Transaction, error)
 	List(ctx context.Context, monthlyBudgetID int) ([]*models.Transaction, error)
@@ -72,4 +75,13 @@ type CellReferenceRepository interface {
 	GetByTransaction(ctx context.Context, transactionID int) ([]*models.CellReference, error)
 	Delete(ctx context.Context, id int) error
 	DeleteByTransaction(ctx context.Context, transactionID int) error
+}
+
+// FileRepository defines file data access methods
+type FileRepository interface {
+	Create(ctx context.Context, file *models.CSVFile) (*models.CSVFile, error)
+	GetByID(ctx context.Context, id int) (*models.CSVFile, error)
+	List(ctx context.Context, monthlyBudgetID int) ([]*models.CSVFile, error)
+	Delete(ctx context.Context, id int) error
+	CountByBudget(ctx context.Context, monthlyBudgetID int) (int, error)
 }

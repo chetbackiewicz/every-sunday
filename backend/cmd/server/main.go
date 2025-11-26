@@ -82,17 +82,18 @@ func setupRoutes(r *gin.Engine, h *handlers.Handlers) {
 			budgets.DELETE("/:month", h.Budget.Delete)
 		}
 
-		// Category routes
-		categories := protected.Group("/budgets/:month/categories")
-		{
-			categories.GET("", h.Category.List)
-			categories.POST("", h.Category.Create)
-			categories.PUT("/:id", h.Category.Update)
-			categories.DELETE("/:id", h.Category.Delete)
-		}
+		// Category routes (Scoped to budget)
+		protected.GET("/budgets/:month/categories", h.Category.List)
+		protected.POST("/budgets/:month/categories", h.Category.Create)
 
-		// CSV file upload
+		// Category routes (ID based)
+		protected.PUT("/categories/:id", h.Category.Update)
+		protected.DELETE("/categories/:id", h.Category.Delete)
+
+		// CSV file routes
 		protected.POST("/budgets/:month/files", h.File.Upload)
+		protected.GET("/budgets/:month/files", h.File.ListFiles)
+		protected.DELETE("/files/:id", h.File.DeleteFile)
 
 		// Transaction routes
 		transactions := protected.Group("/budgets/:month/transactions")
